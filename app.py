@@ -191,6 +191,24 @@ def get_historical_rainfall(state_name):
 st.markdown('<p class="main-header">🌧️ Disaster Prediction System</p>', unsafe_allow_html=True)
 st.markdown('<p class="sub-header">Flood & Drought Risk Analysis with Live Weather Data</p>', unsafe_allow_html=True)
 
+# --- Intro / Landing Section ---
+with st.container():
+    st.markdown("""
+    **Welcome!** This is an AI-powered disaster risk prediction system built as a 
+    demonstration of machine learning applied to real-world problems.
+    """)
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("🤖 **ML Model**\n\nLogistic Regression trained on 50 years of IMD rainfall data (1951-2000)")
+    with col2:
+        st.markdown("📡 **Live Data**\n\nReal-time weather fetched from Open-Meteo API - no API key required")
+    with col3:
+        st.markdown("🎯 **Purpose**\n\nPredict flood/drought risk for Indian states with actionable insights")
+
+    st.markdown("""
+    **How to use:** Select your state below, view live weather data, then click **Predict Risk** to get your disaster risk assessment.
+    """)
+
 st.markdown("---")
 
 # --- Sidebar ---
