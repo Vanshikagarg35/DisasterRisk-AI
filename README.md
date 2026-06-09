@@ -48,7 +48,7 @@ Disaster-prediction/
 ├── requirements.txt          # Python dependencies
 └── venv/                     # Virtual environment
 ```
-
+link to app - https://disasterrisk-ai-hojo.streamlit.app/
 ## How It Works
 
 1. **Training data** (`training_data.csv`) was created by labeling historical rainfall with risk levels based on thresholds (0-204mm = safe, 204-254mm = moderate, 254-354mm = heavy, 354+mm = extreme)
